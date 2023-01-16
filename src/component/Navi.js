@@ -8,7 +8,7 @@ function Navi(props) {
 
     return (
         <div className={`${navicss.hd} border-bottom py-2 fixed-top`}>
-            <header id="hd" className='container-lg d-flex mx-auto justify-content-between align-items-center'>
+            <header id="hd" className='container-lg d-lg-flex flex-wrap mx-auto justify-content-between align-items-center'>
                 <h1>
                     <Link to="/"><img src="./img/logo_1116.svg" className="img-fluid w-100" alt="logo" /></Link>
                 </h1>
@@ -24,7 +24,7 @@ function Navi(props) {
                     </li>
                 </ScrollSpy>
                 <ul id="sns" className='d-flex'>
-                    <li><a href="#" onClick={()=>{updatenaviText(!naviText)}} target="_blank">{ naviText ? '한국어' : 'ENG'}
+                    <li><a href="#" onClick={()=>{updatenaviText(!naviText)}} target="_blank" className='px-3 font141618'>{ naviText ? '한국어' : 'ENG'}
                         </a>
                     </li>
                     {/* <li><a href="" target="_blank">노션</a></li>
