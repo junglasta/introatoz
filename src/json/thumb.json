@@ -1,0 +1,22 @@
+{
+    "thumb1" : [
+        "./img/thumb/insta_1.jpg", 
+        "./img/thumb/insta_2.jpg", 
+        "./img/thumb/insta_3.jpg", 
+        "./img/thumb/insta_4.jpg", 
+        "./img/thumb/insta_5.jpg", 
+        "./img/thumb/insta_6.jpg", 
+        "./img/thumb/insta_7.jpg", 
+        "./img/thumb/insta_8.jpg"
+    ],
+    "thumb2" : [
+        "./img/thumb/insta_9.jpg", 
+        "./img/thumb/insta_10.jpg", 
+        "./img/thumb/insta_11.jpg", 
+        "./img/thumb/insta_12.jpg", 
+        "./img/thumb/insta_13.jpg", 
+        "./img/thumb/insta_14.jpg", 
+        "./img/thumb/insta_15.jpg", 
+        "./img/thumb/insta_16.jpg"
+    ]
+}

@@ -1,4 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+*.ai
+*.psd
+*.scss
+*.pdf
+*.png
+*.jpg
+.vscode/
+img/
 
 # dependencies
 /node_modules

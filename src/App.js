@@ -1,15 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import Navi from './component/Navi';
+import Hd from './component/Hd';
+import Preinterview from './component/Preinterview';
+import Ability from './component/Ability';
+import About from './component/About';
+import Contact from './component/Contact';
+import Thumbimg from './component/Thumbimg';
 import Portfolio from './component/Portfolio';
+import Ft from './component/Ft';
 
 function App() {
   return (
-    <div>
-      <Navi />
-      <section style={{height:"100vh"}} id="" className='border-top'></section>
-      <section style={{height:"100vh"}} id="about" className='border-top bg-dark'></section>
-      <Portfolio id="portfolio" title="포트폴리오 멋지지" />
-      <section style={{height:"100vh"}} id="contact" className='border-top'></section>
+    <div className="App" id="top">
+      <Hd />
+      <Ability />
+      <About id="about" className='border-top'/>
+      <Portfolio id="portfolio" className='border-top bg-dark' title="포트폴리오 멋지지" />
+      <Preinterview />
+      <Contact id="contact" className='border-top'/>
+      <Thumbimg />
+      <Ft />
     </div>
   );
 }
