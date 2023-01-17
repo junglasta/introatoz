@@ -1,0 +1,29 @@
+{
+    "naviDATA" : [
+        {
+            "d1" : {
+                "naviText" : "내소개",
+                "type" : "",
+                "href" : "/about",
+                "cls" : ["px-3", "font141619"]
+            }
+        },
+        {
+            "d1" : {
+                "naviText" : "작업물",
+                "type" : "a",
+                "href" : "#portfolio",
+                "cls" : ["px-3", "font141619"]
+            }
+        },
+        {
+            "d1" : {
+                "naviText" : "면접제안",
+                "type" : "a",
+                "href" : "#contact",
+                "cls" : ["px-3", "font141619"]
+            }
+        }
+    ],
+    "sns" : []
+}
