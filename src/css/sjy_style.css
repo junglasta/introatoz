@@ -1,0 +1,77 @@
+@charset "UTF-8";
+* {
+  font-family: "Montserrat", "HY견고딕", sans-serif;
+  letter-spacing: -0.083em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+@font-face {
+  font-family: "휴먼둥근헤드라인";
+  src: url(../../public/fonts/HMKMRHD.TTF);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HY견고딕";
+  src: url(../../public/fonts/H2GTRE.TTF);
+  font-style: normal;
+  font-weight: 100;
+}
+h1, h2, h3, h4 {
+  font-family: "휴먼둥근헤드라인";
+  font-size: normal;
+  font-weight: 300;
+}
+
+.font141619 {
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .font141619 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .font141619 {
+    font-size: 14px;
+  }
+}
+.sjy_Swiper .swiper-wrapper .swiper-slide {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sjy_Swiper .swiper-wrapper .react {
+  background: url(../../public/img/mainBanner1.png) no-repeat center;
+  background-size: 1060px 550px;
+  color: transparent;
+}
+.sjy_Swiper .swiper-wrapper .ec {
+  background: url(../../public/img/mainBanner2.png) no-repeat center;
+  background-size: 1060px 550px;
+  color: transparent;
+}
+.sjy_Swiper .swiper-wrapper .plan {
+  background: url(../../public/img/mainBanner3.png) no-repeat center;
+  background-size: 1060px 550px;
+  color: transparent;
+}
+.sjy_Swiper .swiper-wrapper .gnu {
+  background: url(../../public/img/mainBanner4.png) no-repeat center;
+  background-size: 1060px 550px;
+  color: transparent;
+}

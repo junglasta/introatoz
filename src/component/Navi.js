@@ -3,7 +3,6 @@ import navicss from '../css/navi.module.css'
 import { Link } from "react-router-dom";
 import ScrollSpy from 'react-scrollspy';
 import naviDB from '../json/navi.json';
-import '../css/sjy_navi.min.css';
 
 function Navi(props) {
     const [naviText, updatenaviText] = useState(true);

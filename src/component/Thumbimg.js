@@ -3,9 +3,9 @@ import thumbDB from '../json/thumb.json';
 const Thumbimg = (props)=>{
     return (
         <div>
-            <section className="section py-5 text-center">
+            <section className="section py-5 text-center d-flex flex-wrap align-items-center justify-content-center text-center flex-column h-100">
                 <h6>"나를 있게 한 소중한 시간들"</h6>
-                <div id="thumbs" className="d-flex flex-wrap justify-content-center">
+                <div id="thumbs" className="">
                     <ul className="col-12 d-flex">
                         {
                             thumbDB.thumb1.map((item, index)=>{

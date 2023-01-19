@@ -14,7 +14,7 @@ function App() {
       <Hd />
       <Ability />
       <About id="about" className='border-top'/>
-      <Portfolio id="portfolio" className='border-top bg-dark' title="포트폴리오 멋지지" />
+      <Portfolio id="portfolio" className='border-top bg-dark' title="" />
       <Preinterview />
       <Contact id="contact" className='border-top'/>
       <Thumbimg />
