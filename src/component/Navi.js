@@ -10,7 +10,7 @@ function Navi(props) {
     const naviDBfile = naviDB.naviDATA;
 
     return (
-        <div className={`${navicss.hd} border-bottom py-2 fixed-top`}>
+        <div className={`${navicss.hd} py-2 fixed-top`}>
             <header id="hd" className='container-lg d-flex mx-auto justify-content-between align-items-center'>
                 <h1>
                     <Link to="/"><img src="./img/logo_1116.svg" className="img-fluid w-100" alt="logo" /></Link>

@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 import { Autoplay, Pagination } from "swiper";
 import 'swiper/css';
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import '../css/sjy_style.min.css';
 import dbportfolio from '../json/portfolioDB.json'
+import { Navigation } from "swiper";
 
 function Portfolio(props) {
     const portfolioDB = dbportfolio;
@@ -14,11 +16,12 @@ function Portfolio(props) {
     return (
         <div id={props.id}>
             <Swiper
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay, Pagination, Navigation]}
             className="sjy_Swiper"
 
+            navigation={true}
             spaceBetween={0}
-            slidesPerView={1.5}
+            slidesPerView={1}
             centeredSlides={true}
             // autoplay={{
             //     delay: 2500,
@@ -26,6 +29,17 @@ function Portfolio(props) {
             // }}
             pagination={{
                 clickable: true,
+                type: "fraction",
+            }}
+            breakpoints={{
+                // 768: {
+                //     slidesPerView: 4,
+                //     spaceBetween: 40,
+                // },
+                1024: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0,
+                },
             }}
 
             onSlideChange={() => console.log('slide change')}

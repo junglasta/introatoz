@@ -6,6 +6,8 @@
 (소제목) HYGothic-Medium HY견고딕 HYGoThic M // H2GTRE.TTF
 (버튼) HYGothic-Medium HY견고딕 HYGoThic M
 
+(폼태그) HY중고딕 // H2GTRM.TTF
+
 + HY헤드라인M / HYHeadLine M
 
 line-height 26 / 위아래여백 / 두께
