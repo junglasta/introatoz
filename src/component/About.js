@@ -1,8 +1,8 @@
 const About = (props)=>{
     return (
-        <div>
-            <section className="section py-5 text-center">
-                <h3>내소개.</h3>
+        <div className="aboutsec">
+            <section style={{height:"100vh"}} className="border-top bg-light section py-5 text-center">
+                <h3>내소개<span class="point"></span></h3>
             </section>
         </div>
     );

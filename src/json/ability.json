@@ -1,0 +1,53 @@
+{
+    "able" : [
+        {
+            "color" : "orange",
+            "text" : "HTML/CSS 90%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Orange.png",
+            "logoimg" : "./img/logo_html_150.png"
+        },
+        {
+            "color" : "",
+            "text" : "SASS 60%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Black.png",
+            "logoimg" : "./img/logo_sass_150.png"
+        },
+        {
+            "color" : "",
+            "text" : "제이쿼리 90%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Black.png",
+            "logoimg" : "./img/logo_jq_150.png"
+        },
+        {
+            "color" : "",
+            "text" : "php 50%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Black.png",
+            "logoimg" : "./img/logo_php_150.png"
+        },
+        {
+            "color" : "",
+            "text" : "리액트 50%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Black.png",
+            "logoimg" : "./img/logo_react_150.png"
+        },
+        {
+            "color" : "",
+            "text" : "피그마 90%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Black.png",
+            "logoimg" : "./img/logo_figma_150.png"
+        },
+        {
+            "color" : "orange",
+            "text" : "포토샵 95%",
+            "cls" : ["d-flex", "align-items-center", "flex-column"],
+            "stick" : "./img/skills_Orange.png",
+            "logoimg" : "./img/logo_ps_150.png"
+        }
+    ]
+}

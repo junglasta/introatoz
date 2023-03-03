@@ -5,7 +5,7 @@ import ScrollSpy from 'react-scrollspy';
 import naviDB from '../json/navi.json';
 
 function Navi(props) {
-    const [naviText, updatenaviText] = useState(true);
+    // const [naviText, updatenaviText] = useState(true);
 
     const naviDBfile = naviDB.naviDATA;
 
@@ -15,7 +15,8 @@ function Navi(props) {
                 <h1>
                     <Link to="/"><img src="./img/logo_1116.svg" className="img-fluid w-100" alt="logo" /></Link>
                 </h1>
-                <ScrollSpy id="gnb" className='d-flex'>
+                
+                <ScrollSpy id="gnb" className='naviul d-flex'>
                     {
                         naviDBfile.map((item, index)=>{
                             const myclass = item.d1.cls.join(" ");
@@ -41,13 +42,21 @@ function Navi(props) {
                         })
                     }
                 </ScrollSpy>
-                <ul id="sns" className='d-flex'>
-                    <li>
-                        <a href="#" onClick={()=>{updatenaviText(!naviText)}} target="_blank">{ naviText ? '한국어' : 'ENG'}</a>
-                    </li>
-                    {/* <li><a href="" target="_blank">노션</a></li>
-                    <li><a href="" target="_blank">기획</a></li> */}
-                </ul>
+                
+                <div className="dropdown" >
+                    <button type="button" className="dropdown__btn sp_ico" aria-expanded="false">한국어</button>
+                    <ul id="sns" className='dropdown__list d-flex'>
+                        <li className="dropdown__item on sp_ico">
+                            <a href="/" className="dropdown__option" data-lang="ko">한국어</a>
+                        </li>
+                        <li className="dropdown__item">
+                            <a href="/en/" className="dropdown__option" data-lang="en">english</a>
+                        </li>
+                        {/* <li>
+                            <a href="#" onClick={()=>{updatenaviText(!naviText)}} target="_blank">{ naviText ? '한국어' : 'ENG'}</a>
+                        </li> */}
+                    </ul>
+                </div>
             </header>
         </div>
     );

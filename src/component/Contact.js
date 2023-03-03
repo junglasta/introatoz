@@ -25,7 +25,7 @@ const Contact = (props)=>{
                 
                 
                 <div className="container form">
-                    <h3>면접 제안하기.</h3>
+                    <h3>면접 제안하기<span class="point"></span></h3>
                     <form action="http://c0ffee24.cafe24.com/pwa/" method="post" name="contact" id="contact">
                     
                         <ul className="row d-flex flex-wrap">

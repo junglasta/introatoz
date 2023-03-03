@@ -56,6 +56,10 @@ h1, h2, h3, h4 {
     font-size: 14px;
   }
 }
+*:after {
+  display: block;
+}
+
 body .show:before {
   content: "";
   position: fixed;
@@ -97,23 +101,149 @@ body .show #popagree {
 .hdsec .navi_hd__tLF7S header h1 img {
   height: 27px;
 }
-.hdsec .navi_hd__tLF7S header ul:first-of-type {
+.hdsec .navi_hd__tLF7S header ul.naviul {
   margin-right: 15rem;
 }
-.hdsec .navi_hd__tLF7S header ul li.px-4 {
+.hdsec .navi_hd__tLF7S header ul.naviul li.px-4 {
   font-size: 24px;
+}
+.hdsec .navi_hd__tLF7S header .dropdown {
+  position: relative;
+  width: 126px;
+  margin-top: 36px;
+  z-index: 10;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .sp_ico::before {
+  content: "";
+  background-image: url(../../public/img/pc.png);
+  background-size: 500px 3250px;
+  background-repeat: no-repeat;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__btn {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  padding: 0 23px;
+  border: 1px solid #f16c22;
+  border-radius: 23px;
+  color: #f16c22;
+  font-size: 14px;
+  text-align: left;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__btn::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  width: 11px;
+  height: 11px;
+  background-position: -489px -15px;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__btn[aria-expanded=true] {
+  display: none;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__list {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 0;
+  border: 1px solid #f16c22;
+  border-radius: 23px;
+  z-index: 11;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__list .dropdown__item {
+  position: relative;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__list .dropdown__item .dropdown__option {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 23px;
+  font-size: 14px;
+  color: #595e65;
+  text-transform: uppercase;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__list .dropdown__item .dropdown__option::after {
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.hdsec .navi_hd__tLF7S header .dropdown .dropdown__list .dropdown__item.on .dropdown__option {
+  color: #f16c22;
 }
 .hdsec section .visual__list {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
 }
 .hdsec section .visual__list .topbgimg {
   width: 399px;
   height: 381px;
   background-image: url(../../public/img/codeMillet.png);
   background-size: 399px 381px;
+}
+.hdsec section .introsec {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: start;
+  margin-top: 6rem;
+  line-height: 4;
+}
+.hdsec section .introsec h3 span:first-child {
+  font-family: "휴먼둥근헤드라인";
+  color: #00d564;
+}
+.hdsec section .introsec h3 .point {
+  width: 6px;
+  height: 6px;
+  background-color: #f16c22;
+  display: inline-block;
+  margin: 0 0 -4px 5px;
+}
+
+.abilitysec section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.abilitysec section h3 {
+  text-align: start;
+}
+.abilitysec section h3 .point {
+  width: 6px;
+  height: 6px;
+  background-color: #f16c22;
+  display: inline-block;
+  margin: 0 0 -4px 5px;
+}
+.abilitysec section .abilityline {
+  position: absolute;
+  margin: 2.2rem auto 0 auto;
+  width: 1280px;
+  height: 2px;
+  background-image: url(../../public/img/ability_line1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+}
+.abilitysec section div .abilityul li h6 {
+  font-weight: 600;
+  font-family: "HY중고딕";
+}
+.abilitysec section div .abilityul li h6 .orange {
+  color: #f16c22;
+}
+
+.aboutsec section h3 span {
+  width: 6px;
+  height: 6px;
+  background-color: #f16c22;
+  display: inline-block;
+  margin: 0 0 -4px 5px;
 }
 
 .sjy_Swiper .swiper-wrapper .swiper-slide {
@@ -152,6 +282,48 @@ body .show #popagree {
   bottom: 7rem;
 }
 
+.previewsec {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.previewsec section h3 {
+  text-align: start;
+}
+.previewsec section h3 .point {
+  width: 6px;
+  height: 6px;
+  background-color: #f16c22;
+  display: inline-block;
+  margin: 0 0 -4px 5px;
+}
+.previewsec section dl dt .orange {
+  color: #f16c22;
+  font-family: "휴먼둥근헤드라인";
+}
+.previewsec section dl dt .green {
+  color: #00d564;
+  font-family: "휴먼둥근헤드라인";
+}
+.previewsec section dl dt:after {
+  content: "＋";
+}
+.previewsec section dl dt.act:after {
+  content: "－";
+}
+.previewsec section dl dt.act {
+  color: #f16c22;
+}
+.previewsec section dl dt.act + dd {
+  max-height: 250px;
+  padding-top: 1rem;
+}
+.previewsec section dl dt dd {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -180,6 +352,13 @@ label {
 #contactsec section h3 {
   position: absolute; /*top: 5rem;*/
 }
+#contactsec section h3 span {
+  width: 6px;
+  height: 6px;
+  background-color: #f16c22;
+  display: inline-block;
+  margin: 0 0 -4px 5px;
+}
 #contactsec section::before {
   content: "";
   display: block;
@@ -195,14 +374,14 @@ label {
   background-position-y: top;
 }
 #contactsec section .container {
-  max-width: 992px;
+  max-width: 1280px;
   margin-top: 16rem;
 }
 #contactsec section .container form {
   font-family: "HY중고딕" !important;
   font-weight: 300;
   font-style: normal;
-  margin-top: 8rem;
+  margin: 8rem auto 0;
   position: absolute;
   width: 992px;
 }
