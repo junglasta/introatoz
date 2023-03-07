@@ -5,7 +5,7 @@ const Ability = (props)=>{
 
     return (
         <div className="abilitysec">
-            <section style={{height:"50vh"}} className="section py-5 text-center">
+            <section className="section py-5 text-center">
                 <h3 className="mb-5">기술력<span class="point"></span></h3>
                 <div className="abilityline"></div>
                 <div>

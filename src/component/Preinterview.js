@@ -11,7 +11,7 @@ function Preinterview(props) {
 
     return (
         <div className='previewsec'>
-            <section style={{height:"100vh"}} className="section py-5 text-center">
+            <section className="section py-5 text-center">
                 <h3 className='mb-5'>먼저 답하기<span class="point"></span>
                     {/* <button id='allbtn_interview'>전체보기</button> */}
                 </h3>

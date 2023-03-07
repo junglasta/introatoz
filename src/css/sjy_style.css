@@ -76,7 +76,6 @@ body .show #popagree {
 }
 
 .hdsec:before {
-  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -174,30 +173,37 @@ body .show #popagree {
 .hdsec .navi_hd__tLF7S header .dropdown .dropdown__list .dropdown__item.on .dropdown__option {
   color: #f16c22;
 }
-.hdsec section .visual__list {
+.hdsec section.hdbg {
+  background-image: url(../../public/img/hd_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 0;
+  padding-top: 57%;
+}
+.hdsec section.hdbg .visual__list {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.hdsec section .visual__list .topbgimg {
+.hdsec section.hdbg .visual__list .topbgimg {
   width: 399px;
   height: 381px;
   background-image: url(../../public/img/codeMillet.png);
   background-size: 399px 381px;
 }
-.hdsec section .introsec {
+.hdsec section.hdbg .introsec {
   max-width: 1280px;
   margin: 0 auto;
   text-align: start;
   margin-top: 6rem;
   line-height: 4;
 }
-.hdsec section .introsec h3 span:first-child {
+.hdsec section.hdbg .introsec h3 span:first-child {
   font-family: "휴먼둥근헤드라인";
   color: #00d564;
 }
-.hdsec section .introsec h3 .point {
+.hdsec section.hdbg .introsec h3 .point {
   width: 6px;
   height: 6px;
   background-color: #f16c22;
@@ -252,11 +258,6 @@ body .show #popagree {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 1025px) {
-  .sjy_Swiper .swiper-wrapper {
-    height: calc(100vh - 120px);
-  }
 }
 .sjy_Swiper .swiper-wrapper .react {
   background: url(../../public/img/mainBanner1.png) no-repeat center;
